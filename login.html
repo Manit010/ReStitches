@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Restitch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <div class="navbar">
+        <h1>Restitch</h1>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="aboutUs.html">About Us</a>
+            <a href="login.html">Login</a>
+            <a href="signup.html">Sign Up</a>
+        </div>
+    </div>
+
+    <!-- Sign-Up Section -->
+    <div class="signup-section">
+        <div class="tagline-left">
+            <h1>Revive. Reuse. Restitch.</h1>
+            <h6>Refresh your wardrobe</h6>
+        </div>
+        <div class="signup-right">
+            <h2>Login</h2>
+            <form action="submit_signup.html">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="registerAs">Login as:</label> 
+                <select id="registerAs" name="registerAs" required> 
+                    <option value="">Choose your role</option> 
+                    <option value="donator">As a Donator</option> 
+                    <option value="buyer">As a Buyer</option> 
+                </select>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="otp">OTP:</label>
+                <input type="text" id="otp" name="otp" required>
+                
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <!-- <div class="footer">
+        <p>&copy; 2024 Restitch. All Rights Reserved.</p>
+        <div class="social-media">
+            <a href="#" class="social-icon"><img src="data" alt="Facebook" /> Facebook</a>
+            <a href="#" class="social-icon"><img src="data" alt="Instagram" /> Instagram</a>
+            <a href="#" class="social-icon"><img src="data" alt="LinkedIn" /> LinkedIn</a>
+        </div>
+    </div> -->
+</body>
+</html>
