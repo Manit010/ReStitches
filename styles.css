@@ -136,7 +136,6 @@ body {
     margin-right: 8px;
 }
 
-/**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
 
 /* About Section */
 .about-section {
@@ -187,7 +186,6 @@ body {
     margin: 5px 0;
 }
 
-/**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
 
 /* Sign-Up and Login Section Styles */
 .signup-section {
@@ -267,4 +265,42 @@ body {
     background: #2980b9;
 }
 
-/**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+/*//////////////////////////////////////////////////*/
+
+
+.section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    /* background-color: rgba(255, 255, 255, 0.5); 50% transparency */
+}
+
+.info-box {
+    border: 2px solid #d4af37; /* Box border */
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly opaque background */
+    max-width: 300px;
+    text-align: center;
+}
+
+.info-box h2 {
+    font-size: 1.2em;
+    color: #999;
+}
+
+.info-box p {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.highlight {
+    color: #d4af37;
+}
+
+.arrow {
+    font-size: 2em;
+    color: #999;
+    margin:0 20px;
+}
