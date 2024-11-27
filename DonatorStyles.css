@@ -1,0 +1,144 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Background Animation */
+body {
+    background: linear-gradient(45deg, #3498db, #64efec, #3498db, #60c2cb);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #2b2b2b;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.navbar h1 {
+    font-family: 'Georgia', serif;
+    font-size: 24px;
+    color: white;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    color: #3498db;
+}
+
+/* Welcome Text */
+.welcome-text {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 24 px;
+    color:aliceblue;
+    font-family: 'Verdana', sans-serif;
+}
+
+/* Sign-Up and Login Section Styles */
+.signup-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 30px;
+    padding-right: 190px;
+    margin-right: 100px;
+    color: #333;
+    flex: 1;
+}
+
+.child-image {
+    flex: 1;
+    padding-right: 130px;
+    padding-left: 30px;
+    justify-content: right; /* Center the image */
+}
+
+.child-image img {
+    width: 30%;
+    transition: transform 0.3s ease;
+}
+
+.child-image img:hover {
+    transform: scale(1.1);
+}
+
+.signup-right {
+    flex: 1;
+    height: 600px;
+    max-width: 800px;
+    padding: 20px;
+    background: rgba(43, 43, 43, 0.9);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.signup-right h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.signup-right label {
+    display: block;
+    margin: 8px 0 5px;
+}
+
+.signup-right input,
+.signup-right select,
+.signup-right textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.signup-right textarea {
+    height: 100px; /* Fixed height for description box */
+    resize: none; /* Prevent resizing */
+}
+
+.signup-right button {
+    width: 100%;
+    padding: 10px;
+    background: #3498db;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.signup-right button:hover {
+    background: #2980b9;
+}

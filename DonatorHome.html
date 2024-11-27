@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reswitch - Donate More</title>
+    <link rel="stylesheet" href="DonatorStyles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <h1>Restitch</h1>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="aboutUs.html">About Us</a>
+            <a href="login.html">Login</a>
+            <a href="signup.html">Sign Up</a>
+        </div>
+    </div>
+
+
+    <!-- Welcome Text -->
+    <div class="welcome-text">
+        <h2>Thank You For Making Someone Smile</h2>
+    </div>
+
+    <!-- Main Content -->
+    <div class="signup-section">
+        <!-- Image of Playful Child -->
+        <div class="child-image">
+            <img src="chintu.png" alt="Playful Child" style="width: 100%;">
+        </div>
+
+        <!-- Form -->
+        <div class="signup-right">
+            <h2>Donate More</h2>
+            <form>
+                <label for="years-of-cloth">Years of Cloth:</label>
+                <select id="years-of-cloth" name="years-of-cloth">
+                    <option value="<6months"><6 months</option>
+                    <option value="1year">1 year</option>
+                    <option value="2years">2 years</option>
+                    <option value="3years">3 years</option>
+                    <option value=">3years">>3 years</option>
+                </select>
+
+                <label for="original-cost">Original Cost:</label>
+                <input type="text" id="original-cost" name="original-cost" placeholder="Enter the original cost">
+
+                <label for="gender-of-cloth">Gender of Cloth:</label>
+                <select id="gender-of-cloth" name="gender-of-cloth">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="unisex">Unisex</option>
+                </select>
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" placeholder="Provide a detailed description of the cloth"></textarea>
+
+                <label for="image-upload">Add Image of Clothes:</label>
+                <input type="file" id="image-upload" name="image-upload">
+
+                <button type="submit">Donate</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
