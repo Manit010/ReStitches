@@ -1,0 +1,121 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Background Animation */
+body {
+    background: linear-gradient(45deg, #3498db, #64efec, #3498db, #60c2cb);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #2b2b2b;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.navbar h1 {
+    font-family: 'Georgia', serif;
+    font-size: 24px;
+    color: white;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    color: #3498db;
+}
+
+/* Main Content */
+.content {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; /* Smaller gap between grid items */
+    padding: 20px;
+}
+
+.grid-item {
+    background: white;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 300px;
+    height: 300px; /* Fixed height to maintain square shape */
+    overflow: hidden;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    max-height: 80%; /* Ensure image stays within the box */
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.grid-item p {
+    margin: 10px 0 0;
+    font-size: 18px;
+    font-style: oblique;
+    color: rgb(16, 8, 110);
+}
+
+/* Footer Section */
+.footer {
+    background-color: #2b2b2b;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+    width: 100%;
+}
+
+.footer .social-media {
+    margin-top: 10px;
+}
+
+.footer .social-icon {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.footer .social-icon img {
+    width: 20px;
+    margin-right: 8px;
+}
