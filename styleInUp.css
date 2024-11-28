@@ -16,34 +16,35 @@
         }
 
         /* Navbar */
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 30px;
-            background: rgba(0, 0, 0, 0.8);
-            color: white;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-        }
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
 
-        .navbar h1 {
-            font-family: 'Georgia', serif;
-            font-size: 24px;
-            color: white;
-            margin: 0;
-        }
+.navbar h1 {
+    font-family: 'Georgia', serif;
+    font-size: 24px;
+    color: white;
+}
 
-        .navbar div a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 16px;
-            transition: color 0.3s ease;
-        }
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+}
 
-        .navbar div a:hover {
-            color: #3498db;
-        }
+.navbar a:hover {
+    color: #3498db;
+}
 
         /* Sign-Up Section */
         .signup-section {
