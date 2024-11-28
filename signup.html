@@ -32,11 +32,14 @@
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required placeholder="Enter your full name">
 
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+
                 <label for="registerAs">Register as:</label> 
-                <select id="registerAs" name="registerAs" required> 
+                <select id="registerAs" name="registerAs" required placeholder="Choose your role"> 
                     <option value="">Choose your role</option> 
-                    <option value="donator">Donator</option> 
-                    <option value="Needy">Needy</option> 
+                    <option value="donator" id="00" tag="donator">Donator</option> 
+                    <option value="Needy" id="01" tag="needy">Needy</option> 
                 </select>
                 
                 <label for="password">Password:</label>

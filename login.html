@@ -6,6 +6,13 @@
     <title>Login - Restitch</title>
     <link rel="stylesheet" href="styleInUp.css">
 </head>
+<script src="Login.js">
+    if(tag == "donator"){
+        window.location.href = "DonatorHome.html";
+    }else if(tag == "needy"){
+        window.location.href = "NeedyHome.html";
+    }
+</script>
 <body>
     
     <!-- Navbar -->
@@ -28,8 +35,8 @@
         <div class="signup-right">
             <h2>Login</h2>
             <form action="submit_signup.html">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password" required placeholder="Enter your password">
