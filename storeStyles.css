@@ -42,15 +42,35 @@ body {
     color: white;
 }
 
+.navbar .nav-links {
+    display: flex;
+    align-items: center;
+}
+
 .navbar a {
     color: white;
     text-decoration: none;
     margin: 0 10px;
     font-size: 16px;
+    display: flex;
+    align-items: center;
 }
 
 .navbar a:hover {
     color: #3498db;
+}
+
+.navbar .cart-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px; /* Adjust size as needed */
+    height: 24px; /* Adjust size as needed */
+}
+
+.navbar .cart-icon {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 /* Main Content */
@@ -62,18 +82,15 @@ body {
 }
 
 /* Grid Container */
-/* Grid Container */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Ensure 3 columns */
-    gap: 35px 5px; /* 15px padding between rows, 10px between columns */
-    padding: 20px; /* Overall padding for the grid container */
-    justify-items: center; /* Center items within each grid cell */
-    max-width: 1270px; /* Limit the width of the grid */
-    margin: 0 auto; /* Center the grid container on the page */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px 5px;
+    padding: 20px;
+    justify-items: center;
+    max-width: 1270px;
+    margin: 0 auto;
 }
-
-
 
 .grid-item {
     background: white;
@@ -81,7 +98,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     width: 280px;
-    height: 380px; /* Increased height */
+    height: 380px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -92,7 +109,7 @@ body {
 .grid-item img {
     width: 100%;
     height: auto;
-    max-height: 70%; /* Ensure image stays within the box */
+    max-height: 70%;
     display: block;
     margin: 0 auto;
     border-radius: 10px;
@@ -106,7 +123,6 @@ body {
 }
 
 /* Buttons */
-/* Buttons */
 .buttons {
     display: flex;
     justify-content: center;
@@ -115,21 +131,20 @@ body {
 }
 
 .add-cart-btn {
-    background-color: orange; /* Orange background for Add to Cart button */
+    background-color: orange;
     color: white;
     border: none;
     padding: 15px;
-    font-size: 16px; /* Larger text for better visibility */
+    font-size: 16px;
     cursor: pointer;
-    border-radius: 30px; /* Increased border radius for even rounder button */
-    width: 100%; /* Full width of the container */
+    border-radius: 30px;
+    width: 100%;
     transition: background-color 0.3s ease;
 }
 
 .add-cart-btn:hover {
-    background-color: #e67e22; /* Darker orange when hovered */
+    background-color: #e67e22;
 }
-
 
 /* Footer Section */
 .footer {
