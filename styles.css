@@ -179,6 +179,8 @@ body {
     flex: 1;
 }
 
+
+
 .about-container {
     background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(10px);
