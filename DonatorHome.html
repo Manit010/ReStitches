@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restitch - Donate More</title>
-    <link rel="stylesheet" >
+    <link rel="stylesheet">
     <style>
         /* General Styles */
         body, html {
@@ -72,13 +72,33 @@
         .signup-section {
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
             padding: 40px;
             gap: 30px;
-            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        .signup-image {
+            flex: 1;
+            max-width: 300px;
+            text-align: center;
+        }
+
+        .signup-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .signup-image img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
         }
 
         .signup-right {
+            flex: 2;
             width: 100%;
             max-width: 500px;
             padding: 30px;
@@ -155,6 +175,10 @@
                 max-width: 100%;
                 padding: 20px;
             }
+
+            .signup-image {
+                max-width: 100%;
+            }
         }
     </style>
 </head>
@@ -176,6 +200,11 @@
 
     <!-- Main Content -->
     <div class="signup-section">
+        <!-- Image -->
+        <div class="signup-image">
+            <img src="donate.jpg" alt="Donation">
+        </div>
+
         <!-- Form -->
         <div class="signup-right">
             <h2>Donate More</h2>
