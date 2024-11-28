@@ -23,11 +23,6 @@ const userSchema = new mongoose.Schema({
   fullName: { type: String, required: true }, // Combine first and last name into full name
   email: { type: String, required: true, unique: true },
   password: { type: String, required: true },
-  userType: { 
-    type: String, 
-    enum: ['00', '01'], 
-    required: true // 00 = Donator, 01 = Needy
-  }
 });
 
 // User Model
@@ -46,9 +41,10 @@ app.post('/api/users', async (req, res) => {
     return res.status(400).json({ message: 'Passwords do not match' });
   }
 
-  // Validate userType
-  if (!['00', '01'].includes(userType)) {
-    return res.status(400).json({ message: 'Invalid user type. Use "00" for Donator and "01" for Needy.' });
+  //validate email format
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    return res.status(400).json({ message: 'Invalid email format' });
   }
 
   try {
@@ -66,7 +62,6 @@ app.post('/api/users', async (req, res) => {
       fullName,
       email,
       password: hashedPassword,
-      userType, // Store the user type
     });
 
     const result = await user.save();

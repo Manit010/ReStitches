@@ -22,12 +22,7 @@ mongoose.connect(process.env.MONGO_URI)
 const userSchema = new mongoose.Schema({
   fullName: { type: String, required: true },
   email: { type: String, required: true, unique: true },
-  password: { type: String, required: true },
-  userType: { 
-    type: String, 
-    enum: ['00', '01'], // '00' for Donator, '01' for Needy
-    required: true
-  }
+  password: { type: String, required: true }
 });
 
 // User Model
