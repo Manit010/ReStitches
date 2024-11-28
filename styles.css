@@ -27,7 +27,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
+    padding: 4px 55px;
     background: #2b2b2b;
     color: white;
     position: sticky;
@@ -109,81 +109,60 @@ body {
 }
 
 
-
-/* Footer Section */
 .footer {
-    background-color: #2b2b2b;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: auto;
-    width: 100%;
-}
-
-.footer .social-media {
-    margin-top: 10px;
-}
-
-.footer .social-icon {
-    margin: 0 15px;
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-}
-
-.footer .social-icon img {
-    width: 20px;
-    margin-right: 8px;
-}
-
-
-/* About Section */
-.about-section {
-    padding: 50px;
-    text-align: left;
-    color: white;
-    display: flex;
-    justify-content: center;
-    flex: 1;
-}
-
-.about-container {
-    background: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-    padding: 30px;
-    max-width: 800px;
+    background-color: #232f3e;
     color: #ffffff;
-    transition: all 0.3s ease;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
 }
 
-.about-container:hover {
-    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.5);
+.footer-columns {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 10px;
+    border-bottom: 1px solid #3a4553;
 }
 
-.about-container h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
+.footer-column h3 {
+    color: #ffa500;
+    margin-bottom: 10px;
 }
 
-.about-container h3 {
-    font-size: 24px;
-    margin-top: 20px;
+.footer-column a {
+    color: #d7d7d7;
+    display: block;
+    text-decoration: none;
+    margin: 5px 0;
+    font-size: 14px;
 }
 
-.about-container p {
-    font-size: 18px;
+.footer-column a:hover {
+    color: #ffffff;
 }
 
-.about-container ul {
-    list-style-type: none;
-    padding: 0;
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer-bottom p {
     margin: 0;
 }
 
-.about-container ul li {
-    font-size: 18px;
-    margin: 5px 0;
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: #d7d7d7;
+    text-decoration: none;
+}
+
+.social-icon img {
+    width: 16px;
+    margin-right: 5px;
+    vertical-align: middle;
 }
 
 
