@@ -23,7 +23,6 @@ body {
 }
 
 /* Navbar Styling */
-/* Navbar Styling */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -66,19 +65,19 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 35px 5px;
-    padding: 20px;
+    padding:10px;
     justify-items: center;
     max-width: 1270px;
     margin: 0 auto;
 }
 
 .grid-item {
-    background: white;
+    background: rgb(255, 255, 255);
     padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     width: 280px;
-    height: 380px;
+    height: 460px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -95,82 +94,59 @@ body {
     border-radius: 10px;
 }
 
+/* Style for Description Box */
 .grid-item p {
-    margin: 10px 0;
-    font-size: 18px;
-    font-style: italic;
-    color: rgb(16, 8, 110);
-}
-
-/* Buttons */
-.buttons {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+    margin: 1px 0;
     padding: 10px;
-}
-
-.add-cart-btn {
-    background-color: orange;
-    color: white;
-    border: none;
-    padding: 15px;
+    background-color: #faf2e3; /* Light gray for contrast */
+    border-left: 4px solid #3498db; /* Highlight strip */
+    border-radius: 5px;
     font-size: 16px;
-    cursor: pointer;
-    border-radius: 30px;
-    width: 100%;
-    transition: background-color 0.3s ease;
+    color: #333; /* Dark text for readability */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
-.add-cart-btn:hover {
-    background-color: #e67e22;
-}
-
-/* Footer Section */
+/* Footer Styling */
 .footer {
-    background-color: #2b2b2b;
-    color: white;
+    background-color: black;
+    padding: 20px;
     text-align: center;
-    padding: 1rem;
-    margin-top: auto;
-    width: 100%;
-    position: relative;
-}
-
-/* Social media links */
-.footer .social-media {
-    margin-top: 10px;
+    color: white;
+    font-size: 16px;
 }
 
 .footer .social-icon {
-    margin: 0 15px;
+    margin: 5px;
+    display: inline-block;
     text-decoration: none;
     color: white;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    color: white;
     font-size: 16px;
+    position: relative; /* Create positioning context */
 }
 
-.footer .social-icon img {
-    width: 20px;
-    margin-right: 8px;
-}
-
-/* Helpline Section */
-.helpline {
-    position: absolute; 
-    right: 50px;
-    bottom: 20px;
-}
-
-.helpline-link {
-    color: #fff;
+/* Position helpline at bottom left of footer */
+.footer .helpline {
+    position: absolute;
+    bottom: 20px; /* Adjust the distance from the bottom */
+    right: 20px; /* Adjust the distance from the left */
     font-size: 14px;
-    text-decoration: none;
-    background-color: #3498db;
-    padding: 8px 15px;
-    border-radius: 25px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    background-color: #3498db; /* Background color */
+    color: white; /* Text color */
+    padding: 8px 15px; /* Padding around the text */
+    border: 2px solid #2980b9; /* Border around the helpline */
+    border-radius: 20px; /* Rounded corners */
+    font-weight: bold;
 }
 
-.helpline-link:hover {
-    background-color: #2980b9;
+.footer .helpline a {
+    text-decoration: none;
+    color: white; /* Ensure link text is white */
 }
