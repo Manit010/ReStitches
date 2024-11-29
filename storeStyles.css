@@ -134,8 +134,10 @@ body {
     padding: 1rem;
     margin-top: auto;
     width: 100%;
+    position: relative;
 }
 
+/* Social media links */
 .footer .social-media {
     margin-top: 10px;
 }
@@ -150,4 +152,25 @@ body {
 .footer .social-icon img {
     width: 20px;
     margin-right: 8px;
+}
+
+/* Helpline Section */
+.helpline {
+    position: absolute; 
+    right: 50px;
+    bottom: 20px;
+}
+
+.helpline-link {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    background-color: #3498db;
+    padding: 8px 15px;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.helpline-link:hover {
+    background-color: #2980b9;
 }
