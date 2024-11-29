@@ -15,8 +15,8 @@
             100% { background-position: 0% 50%; }
         }
 
-        /* Navbar */
-/* Navbar Styling */
+        /* Navbar Styling */
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -45,7 +45,6 @@
 .navbar a:hover {
     color: #3498db;
 }
-
         /* Sign-Up Section */
         .signup-section {
             display: flex;
