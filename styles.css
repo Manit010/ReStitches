@@ -23,7 +23,6 @@ body {
 }
 
 /* Navbar Styling */
-/* Navbar Styling */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -31,6 +30,7 @@ body {
     padding: 15px 30px;
     background: rgba(0, 0, 0, 0.8);
     color: white;
+    position: sticky;
     top: 0;
     z-index: 1000;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
@@ -58,7 +58,7 @@ body {
     text-align: center;
     margin: 20px 0;
     font-size: 70px;
-    color:aliceblue;
+    color: aliceblue;
     font-family: 'Verdana', sans-serif;
 }
 
@@ -74,6 +74,7 @@ body {
     font-size: 50px;
     margin-bottom: 20px;
 }
+
 /* About img */
 .about-img {
     display: flex;
@@ -86,7 +87,7 @@ body {
     background: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
     padding: 20px;
-    max-width: 20%; /* Reduced max-width to fit within the page */
+    max-width: 20%;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
@@ -134,7 +135,6 @@ body {
     margin-right: 8px;
 }
 
-
 /* About Section */
 .about-section {
     padding: 50px;
@@ -184,166 +184,31 @@ body {
     margin: 5px 0;
 }
 
-
-
-/* About Section */
-.about-section {
-    padding: 50px;
-    text-align: left;
-    color: white;
-    display: flex;
-    justify-content: center;
-    flex: 1;
-}
-
-
-
-.about-container {
-    background: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-    padding: 30px;
-    max-width: 800px;
-    color: #ffffff;
-    transition: all 0.3s ease;
-}
-
-.about-container:hover {
-    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.5);
-}
-
-.about-container h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-}
-
-.about-container h3 {
-    font-size: 24px;
-    margin-top: 20px;
-}
-
-.about-container p {
-    font-size: 18px;
-}
-
-.about-container ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.about-container ul li {
-    font-size: 18px;
-    margin: 5px 0;
-}
-
-
-/* Sign-Up and Login Section Styles */
-.signup-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px 30px;
-    padding-right: 190px;
-    margin-right: 100px;
-    color: #333;
-    flex: 1;
-}
-
-.tagline-left {
-    flex: 1;
-    padding-right: 30px;
-    padding-left: 190px;
-}
-
-.tagline-left h6 {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 25px;
-    text-align: center;
-    color: rgb(84, 84, 84);
-}
-
-.tagline-left h1 {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 40px;
-    text-align: center;
-    color: rgb(255, 255, 255);
-}
-
-.signup-right {
-    flex: 1;
-    max-width: 400px;
-    padding: 20px;
-    background: rgba(43, 43, 43, 0.9);
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-    color: white;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-}
-
-.signup-right h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.signup-right label {
-    display: block;
-    margin: 8px 0 5px;
-}
-
-.signup-right input,
-.signup-right select {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: none;
-}
-
-.signup-right button {
-    width: 100%;
-    padding: 10px;
-    background: #3498db;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.signup-right button:hover {
-    background: #2980b9;
-}
-
-/*//////////////////////////////////////////////////*/
-
-
+/* Section Styling */
 .section {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 50px;
-    /* background-color: rgba(255, 255, 255, 0.5); 50% transparency */
 }
 
 .info-box {
-    border: 2px solid #d4af37; /* Box border */
+    border: 2px solid #d4af37;
     padding: 20px;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.9); /* Slightly opaque background */
+    background-color: rgba(0, 0, 0, 0.8); /* Dark theme color */
+    color: white; /* White text */
     max-width: 300px;
     text-align: center;
+    flex: 1; /* Ensure all boxes take equal space */
 }
 
 .info-box h2 {
-    font-size: 1.2em;
-    color: #999;
+    font-size: 1.5em;
 }
 
 .info-box p {
-    font-size: 1.5em;
-    color: #333;
+    font-size: 1.2em;
 }
 
 .highlight {
@@ -352,6 +217,6 @@ body {
 
 .arrow {
     font-size: 2em;
-    color: #999;
-    margin:0 20px;
+    color: #d4af37;
+    margin: 0 20px;
 }
